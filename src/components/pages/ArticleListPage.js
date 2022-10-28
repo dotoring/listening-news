@@ -9,7 +9,6 @@ import Sports from './Tabs/Sports'
 import Entertain from './Tabs/Entertain'
 import Politics from './Tabs/Politics'
 import It from './Tabs/IT'
-import search from '../../img/search.png'
 
 const Tab = styled.div`
   width: 100%;
