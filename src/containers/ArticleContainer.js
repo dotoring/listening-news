@@ -9,6 +9,7 @@ const ArticleContainer = () => {
 
   useEffect(() => {
     getArticles();
+    console.log(articles);
   }, [getArticles]);
 
   useEffect(() => {
