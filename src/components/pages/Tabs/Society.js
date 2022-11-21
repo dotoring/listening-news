@@ -69,7 +69,7 @@ function Article(props) {
   const [playing, setPlaying] = useState(false);
 
   useEffect(() => {
-    let audio = new Audio(`http://haeun9969.dothome.co.kr/capstone/IT/${props.article._id}.wav`);
+    let audio = new Audio(`/audio/${props.article._id}.wav`);
 
     playing ? audio.play() : audio.pause();
     return () => audio.pause();

@@ -5,7 +5,6 @@ import palette from '../../../style/palette';
 import speaker from '../../../img/sound.png';
 import pauseIcon from "../../../img/pause-sm.png";
 
-
 const ArticleListArea = styled.div`
   margin: 2%;
   display: flex;
@@ -70,7 +69,7 @@ function Article(props) {
   const [playing, setPlaying] = useState(false);
 
   useEffect(() => {
-    let audio = new Audio(`http://haeun9969.dothome.co.kr/capstone/IT/${props.article._id}.wav`);
+    let audio = new Audio(`/audio/${props.article._id}.wav`);
 
     playing ? audio.play() : audio.pause();
     return () => audio.pause();
