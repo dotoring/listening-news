@@ -10,7 +10,7 @@ const ArticleContainer = () => {
   useEffect(() => {
     getArticles();
     console.log(articles);
-  }, [getArticles]);
+  }, [getArticles, articles]);
 
   useEffect(() => {
     if (articles.economy.length) {
